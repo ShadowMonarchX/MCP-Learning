@@ -1,6 +1,6 @@
 # host/host.py
 import asyncio
-from clients.client_a.client import MCPClient
+from clients.client_a.client_a import MCPClient
 
 
 async def main():

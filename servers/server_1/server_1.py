@@ -27,12 +27,12 @@ async def make_nws_request(url: str) -> dict[str, Any] | None:
 def format_alert(feature: dict) -> str:
     props = feature["properties"]
     return f"""
-Event: {props.get('event', 'Unknown')}
-Area: {props.get('areaDesc', 'Unknown')}
-Severity: {props.get('severity', 'Unknown')}
-Description: {props.get('description', 'No description available')}
-Instructions: {props.get('instruction', 'No instructions')}
-"""
+            Event: {props.get('event', 'Unknown')}
+            Area: {props.get('areaDesc', 'Unknown')}
+            Severity: {props.get('severity', 'Unknown')}
+            Description: {props.get('description', 'No description available')}
+            Instructions: {props.get('instruction', 'No instructions')}
+        """
 
 
 # MCP Tool: get_alerts
